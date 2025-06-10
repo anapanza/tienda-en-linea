@@ -1,0 +1,79 @@
+<!--aqui empieza mi documento html, esto es todo lo que el usuario no ve en la pagina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de desempeño</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--desde aqui empiza todo lo que el usuario puede observar en la pagina web-->
+<body>
+    <!--esto es el titulo de mi pagina web y su parrafo principal de introduccion y adjuntamos la imagen de la tienda.-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Quienes_somos">Quienes somos</a></li>
+                <li><a href="#Productos_de_nuestra_tienda">Productos de nuestra tienda </a></li>
+                <li><a href="#Seccion_de_contactos">Seccion de contactos</a></li>
+            </ul>
+        </nav>
+        <h1>TIENDA EN LINEA</h1>
+        <p>bienvenidos a la tienda en linea donde encontraras una variedad de productos de belleza y cuidado facial.</p>
+        <img src="/HTML/images/Beauty-Supply-Store-Landscape.webp" class="belleza"  alt="tienda de productos">
+        <!--aqui se agrega el nav para la navegacion dentro de la pagina-->
+        
+    </header>
+<!--este es el cuerpo de mi pagina, aqui se muestra toda informacion que quiero mostarle al usuario.-->
+    <main>
+        <section id="quienes somos">
+            <h2>QUIENES SOMOS</h2>
+            <p>somos una empresa de productos colombianos destacada por su amplia variedad en productos de belleza y skincare.
+                somos una empresa reconocida internacionalmente, por su excelente calidad de productos y buenos precios.
+                <img src="/HTML/images/maquillaje.webp" class="maquillaje"  alt="maquillaje realizado por una de nuestras asesoras profesionales.">
+        </section>
+        <!--en esta seccion utilizamos article para dar infomacion en especifico, en este caso, mostrar nuestros productos.-->
+        <section id="productos de nuestra tienda">
+            <h2>Productos</h2>
+            <p>estos son los productos mas destacados de nuestra tienda.</p>
+            
+                <nav>
+                    <ul>
+                        <li>jabon facial</li>
+                        <li>labiales y gloss</li>
+                        <li>lapiz de cejas y ojos</li>
+                        <li>polvo</li>
+                        <li>pestañinas</li>
+                        <li>kit completo de maquillaje</li>
+                        <li>kit completo de skincare</li>
+                        <li>paleta de sombras y brochas</li>
+                        <li>bolsos de maquillaje</li>
+                        <li>kit del cuidado para el cabello</li>
+                    </ul>
+                </nav>
+            
+        </section>
+        <section id="seccion de contactos">
+            <h2>contacto</h2>
+            
+            <form action="/send" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        copyright
+    </footer>
+</body>
+</html>

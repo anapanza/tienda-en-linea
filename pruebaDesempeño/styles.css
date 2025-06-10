@@ -1,0 +1,74 @@
+/* se utiliza css para colocarle efectos a la pagina web */
+body {
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+/*se utiliza para darle estilo a las imagenes de la pagina web */
+.belleza {
+    margin: 10px 20px 20px 10px;
+    width: 500px;
+    height: 350px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8)
+}
+
+.maquillaje {
+    margin: 10px 20px 20px 10px;
+    width: 500px;
+    height: 350px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8)
+}
+/*sirve para que la pagina web se vea bien en diferentes pantallas moviles */
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
